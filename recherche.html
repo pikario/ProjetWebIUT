@@ -19,65 +19,140 @@
 		body {
 			margin:0px;
 		}
-		section > article > img {
-			width:150px;
+		#articles {
+			position:relative;
+			left:20%;
+		}
+		#articles img {
+			width:30%;
 			border-radius:5px;
 		}
-		nav {
+		#articles > article {
+			display:flex;
+		}
+		#articles > article > * {
+			margin:20px;
+			max-width: 50%;
+		}
+		aside {
 			background:blue;
 			position:fixed;
 			left:0px;
 		}
-		.articles {
-			left:50%;
+		.prix{
+			color:purple;
+			font-size:140%;
 		}
+
 	</style>
 
 	<body>
-		<header>
-			<h1>Lorem</h1>
-			<input id="recherche"/>
-			<button>ok</button>
-		</header>
+
+
+		<aside id="filtres">
+			<ul>
+				<li>
+					<p>Réel</p>
+					<ul>
+						<li>Nature</li>
+						<li>Ville</li>
+						<li>Chats</li>
+						<li>Montagne</li>
+					</ul>
+				</li>
+				<li>
+					<p>Imaginaire</p>
+					<ul>
+						<li>Science-Fiction</li>
+						<li>Fantasy</li>
+						<li>Horreur</li>
+						<li>Contes de fées</li>
+					</ul>
+				</li>
+				<li>
+					<p>Époque</p>
+					<ul>
+						<li>Jurassique</li>
+						<li>Préhistoire</li>
+						<li>Antiquité</li>
+						<li>Moyen-Âge</li>
+						<li>Révolution Industrielle</li>
+						<li>Contemporaine</li>
+					</ul>
+			</ul>
+		</aside>
+
+
 
 		<main>
-			<nav id="filtres">
-				<ul>
-					<li>
-						<p>Catégorie</p>
-						<ul>
-							<li>Nature</li>
-							<li>Ville</li>
-							<li>Chats</li>
-							<li>Montagne</li>
-						</ul>
-					</li>
-					<li>
-						<p>Type</p>
-						<ul>
-							<li>Réel</li>
-							<li>Imaginaire</li>
-						</ul>
-				</ul>
+			<nav>
 			</nav>
-			
+
 			<section id="articles">
+				<h2>Résultat de recherche</h2>
 				<article>
-					<img src="img/800px-Laguna_Miscanti,_Chile,_2016-02-08,_DD_32.JPG" alt="Le lax Miscanti"/>
-					<p>Lorem Lorem Lorem</p>
+						<img src="img/800px-Laguna_Miscanti,_Chile,_2016-02-08,_DD_32.JPG" alt="Le lax Miscanti"/>
+						<div class="description">
+							<h2><a href="http://saucis.se/">Un paysage joli</a></h2>
+							<p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
+							<p class="prix">24€</p>
+							<a href="http://saucis.se/">En savoir plus...</a>
+						</div>
 				</article>
-			
+
 				<article>
 					<img src="img/800px-Schonach_-_Paradies_-_Sonnenaufgang.jpg" alt="Un paysage joli"/>
-					<p>Lorem Lorem Lorem</p>
+					<div class="description">
+						<h2><a href="http://saucis.se/">Un paysage joli</a></h2>
+						<p>Lorem Lorem Lorem</p>
+						<p class="prix">24€</p>
+						<a href="http://saucis.se/">En savoir plus...</a>
+					</div>
 				</article>
 
 				<article>
 					<img src="img/Frauenkirche_Munich_March_2013.JPG" alt="Une église"/>
-					<p>Lorem Lorem Lorem</p>
+					<div class="description">
+						<h2><a href="http://saucis.se/">Un paysage joli</a></h2>
+						<p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
+						<p class="prix">24€</p>
+						<a href="http://saucis.se/">En savoir plus...</a>
+					</div>
+				</article>
+
+				<article>
+						<img src="img/800px-Laguna_Miscanti,_Chile,_2016-02-08,_DD_32.JPG" alt="Le lax Miscanti"/>
+						<div class="description">
+							<h2><a href="http://saucis.se/">Un paysage joli</a></h2>
+							<p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
+							<p class="prix">24€</p>
+							<a href="http://saucis.se/">En savoir plus...</a>
+						</div>
+				</article>
+
+				<article>
+					<img src="img/800px-Schonach_-_Paradies_-_Sonnenaufgang.jpg" alt="Un paysage joli"/>
+					<div class="description">
+						<h2><a href="http://saucis.se/">Un paysage joli</a></h2>
+						<p>Lorem Lorem Lorem</p>
+						<p class="prix">24€</p>
+						<a href="http://saucis.se/">En savoir plus...</a>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/Frauenkirche_Munich_March_2013.JPG" alt="Une église"/>
+					<div class="description">
+						<h2><a href="http://saucis.se/">Un paysage joli</a></h2>
+						<p>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
+						<p class="prix">24€</p>
+						<p>Vendu par Michel</p>
+						<a href="http://saucis.se/">En savoir plus...</a>
+					</div>
 				</article>
 			</section>
 		</main>
-			
+
+
 	</body>
 </html>
