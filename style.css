@@ -34,10 +34,40 @@ header {
     display: inline-block;
 }
 
-#searchBar > input[type="search"] {
-    background:  rgba(255,255,255,0.5)
+#searchBar > input{
+    background:  rgba(255,255,255,0.5);
+    border: none;
+    padding: 2vh;
+    padding-right: 2vw;
+    min-height: 3vh;
+    border-radius: 5px;
 }
 
+#searchBar > input[type="submit"]{
+    background:  rgba(255,255,255,0.5);
+    border: solid #AAA 0.20vh;
+    padding: 1.8vh;
+    min-height: 3vh;
+    border-radius: 0;
+}
+
+#searchBar > input[type="search"]:hover, #searchBar > input[type="search"]:focus {
+    box-shadow: 0 0 8px rgba(0,0,0,0.12),0 8px 8px rgba(0,0,0,0.24);
+}
+
+#searchBar > input[type="submit"]:hover {
+    box-shadow:0.6ex 0.6ex 1px rgba(0,0,0,0.35);
+}
+
+#searchBar > input[type="submit"]:active {
+    box-shadow:0.3ex 0.3ex 1px rgba(0,0,0,0.35);
+}
+
+#searchBar > input[type="submit"]{
+    background-color: #E0E0E0;
+    position: relative;
+    left: -1vw;
+}
 
 #logo {
     float: left;
@@ -80,17 +110,23 @@ li a:hover {
     transition-duration: 0.33s;
 }
 
+footer{
+    background-color:  rgba(0,0,0,0.30);
+    z-index: 9999;
+    bottom: 0;
+}
+
 footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    bottom: 0;
     width: 100%;
 }
 
 footer li {
-    float: right;
+    float: left;
+    bottom: 0;
 }
 
 footer li a {
