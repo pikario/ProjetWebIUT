@@ -19,9 +19,9 @@ header {
 #bandeau > h1 {
     font-family: sans-serif;
     color: whitesmoke;
-    padding-top: : 1vw ;
-    margin: 3vw 2vw 1vw 1vw;
-    font-size: 3vw;
+    padding-top: 1vh ;
+    margin: 2vw 1.6vw 0.8vw 0.8vw;
+    font-size: 2.4vw;
     display: inline-block;
 }
 #bandeau > h1 a {
@@ -71,14 +71,13 @@ header {
 
 #logo {
     float: left;
-    max-width: 5vw;
-    margin: 2vw;
+    max-width: 4vw;
+    margin: 1.6vw;
 }
 
 header > a {
-    float : right;
-    margin-right: 20vw;
-    display: inline-block;
+    float: right;
+    padding-right: 5vw; 
 }
 
 header ul {
@@ -86,7 +85,6 @@ header ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    top: 0;
     width: 100%;
 }
 
@@ -116,7 +114,7 @@ footer{
     margin-top: 1vh;
     bottom: 0;
     min-height: 4vh;
-    background-color:  rgba(0,0,0,0.30);
+    background-color: rgba(0,0,0,0.30);
     z-index: 9999;
 }
 
@@ -152,5 +150,5 @@ body {
 
 main {
     position: relative;;
-    margin-top: 200px;
+    margin-top: 12vw;
 }
