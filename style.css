@@ -9,34 +9,46 @@ header {
 
 
 #bandeau {
-    padding: 20px;
-    background-color: orangered;
-    flex-wrap: wrap;
-    display: flex;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a1/Sicily_banner_landscape.jpg");
+    background-size: cover;
+    margin: 0px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.12),0 8px 8px rgba(0,0,0,0.24);
+/* J'aimerais mettre une bordure plus visible ici ? */
 }
 
 #bandeau > h1 {
-    margin-top: 0;
-    margin-bottom: 1ex;
-    margin-right: 9px;
-    float : left;
-    display: inherit;
+    font-family: sans-serif;
+    color: whitesmoke;
+    padding-top: : 1vw ;
+    margin: 3vw 2vw 1vw 1vw;
+    font-size: 3vw;
+    display: inline-block;
+}
+#bandeau > h1 a {
+    text-decoration: none;
+    text-shadow: 0 0 8px rgba(0,0,0,0.12),0 8px 8px rgba(0,0,0,0.24);
+    color: whitesmoke;
 }
 
 #searchBar {
-    float : left;
-    display: inherit;
+    display: inline-block;
 }
 
+#searchBar > input[type="search"] {
+    background:  rgba(255,255,255,0.5)
+}
+
+
 #logo {
-    display: block;
     float: left;
     max-width: 5vw;
+    margin: 2vw;
 }
 
 header > a {
     float : right;
     margin-right: 20vw;
+    display: inline-block;
 }
 
 header ul {
@@ -63,7 +75,9 @@ header li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: rgba(238, 238, 238, 0.5);
+    box-shadow: 0 0 8px rgba(0,0,0,0.12),0 8px 8px rgba(0,0,0,0.24);
+    transition-duration: 0.33s;
 }
 
 footer ul {
