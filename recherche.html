@@ -4,24 +4,13 @@
 	<head>
 		<title>Résultats de recherche</title>
 		<meta charset='utf-8'/>
-	</head>
-
-	<style>
-		header {
-			position:fixed;
-			background:orange;
-			width:100%;
-		}
-		header > h1 {
-			margin:0px;
-			display:inline;
-		}
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon"
+			type="image/png"
+			href="./img/mountain.svg">
+	<!--<style>
 		body {
 			margin:0px;
-		}
-		#articles {
-			position:relative;
-			left:20%;
 		}
 		#articles img {
 			width:30%;
@@ -44,9 +33,31 @@
 			font-size:140%;
 		}
 
-	</style>
+	</style>-->
 
 	<body>
+		<header>
+				<div id="bandeau">
+						<a href="index.html"><img id="logo" src="./img/mountain.svg" alt="Logo montagne" /></a>
+						<h1><a href="index.html">Landscap.es</a>
+						</h1>
+						<form id="searchBar" action="recherche.html">
+								<input type="search" placeholder="Rechercher un paysage"/>
+								<input type="submit" value="Trouver !"/>
+						</form>
+						<nav id="navigation">
+								<ul>
+										<li>
+												<a href="who.html">Qui sommes-nous ?</a>
+										</li>
+										<li id="User">
+												<a>Connexion</a>
+										</li>
+								</ul>
+						</nav>
+		</div>
+		<a href="panier.html">Panier</a>
+		</header>
 
 
 		<aside id="filtres">
@@ -79,15 +90,17 @@
 						<li>Révolution Industrielle</li>
 						<li>Contemporaine</li>
 					</ul>
+				</li>
+				<li>
+					<p>Prix</p>
+					0€<input type="range" name="range" id="range" min="0" max="300" step="5" value="175"/>300€
+				</li>
 			</ul>
 		</aside>
 
 
 
 		<main>
-			<nav>
-			</nav>
-
 			<section id="articles">
 				<h2>Résultat de recherche</h2>
 				<article>

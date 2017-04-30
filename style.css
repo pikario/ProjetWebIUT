@@ -77,7 +77,7 @@ header {
 
 header > a {
     float: right;
-    padding-right: 5vw; 
+    padding-right: 5vw;
 }
 
 header ul {
@@ -141,6 +141,16 @@ footer li a {
     text-decoration: none;
 }
 
+aside {
+    background: blue;
+    position: fixed;
+    left: 0px;
+    margin-top: 12vw;
+    height: 100%;
+    max-width: 300px;
+    background-color: #DDD;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.26);
+}
 
 body {
     margin: 0;
@@ -149,6 +159,26 @@ body {
 }
 
 main {
-    position: relative;;
-    margin-top: 12vw;
+    position: absolute;
+    top: 12vw;
+    left: 25vw;
+}
+main img {
+  max-width:200px;
+}
+
+article {
+  background-color: #EEE;
+  border-radius: 5px;
+  margin: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.26);
+  width:300px;
+  float:left;
+}
+
+html {
+  background-image: url("img/sky-clouds-cloudy-blur.jpg");
+  background-size: 100%;
 }
