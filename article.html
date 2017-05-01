@@ -2,53 +2,37 @@
 
 <html>
 	<head>
-		<title>Résultats de recherche</title>
+		<title>Un bien beau paysage</title>
 		<meta charset='utf-8'/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon"
+			type="image/png"
+			href="./img/mountain.svg">
 	</head>
-
-	<style>
-
-	main { display:flex;}
-
-		#gallerie{
-
-		}
-    #gallerie :first-child {
-      width:100px;
-    }
-		#gallerie > img {
-			width:40px;
-			border-radius:5px;
-		}
-
-		aside {
-			background:blue;
-			position:fixed;
-			left:0px;
-		}
-		.prix{
-			color:purple;
-			font-size:140%;
-		}
-    #ajoutPanier{
-      background-color: #abc738;
-      color:white;
-      padding:10px;
-      border-radius:10px;
-      border:none;
-      box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7);
-    }
-    #ajoutPanier:active{
-      box-shadow:none;
-      transition: box-shadow 0.1s;
-    }
-    main {
-    }
-
-	</style>
-
 	<body>
-		<main>
+		<header>
+				<div id="bandeau">
+						<a href="index.html"><img id="logo" src="./img/mountain.svg" alt="Logo montagne" /></a>
+						<h1><a href="index.html">Landscap.es</a>
+						</h1>
+						<form id="searchBar" action="recherche.html">
+								<input type="search" placeholder="Rechercher un paysage"/>
+								<input type="submit" value="Trouver !"/>
+						</form>
+						<nav id="navigation">
+								<ul>
+										<li>
+												<a href="who.html">Qui sommes-nous ?</a>
+										</li>
+										<li id="User">
+												<a href="connect.html">Connexion</a>
+										</li>
+								</ul>
+						</nav>
+		</div>
+			<a href="panier.html">Panier</a>
+		</header>
+	  <main>
       <div id="gallerie">
         <img src="img/miscanti.jpg" alt="Le lac Miscanti"/><br/>
         <img src="img/munich.JPG" alt="Une église"/>
