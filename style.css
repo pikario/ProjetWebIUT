@@ -16,7 +16,7 @@ body {
 main {
     position: absolute;
     top: 170px;
-    left: 13vw;
+    left: 250px;
     padding-left: 2vw;
 }
 
@@ -168,26 +168,33 @@ footer li a {
 
 article img {
   max-width: 200px;
+  height: 100px;
 }
 
 article {
   background-color: #EEE;
   border-radius: 5px;
-  margin: 2px;
+  margin: 10px;
   padding :2px;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.26);
   width:300px;
   float:left;
   text-align: center;
+  height: 300px;
+  opacity:0.9;
 }
 
 article figure{
     margin: 0;
 }
+article figcaption {
+    height: 100px;
+}
 
 html {
   background-image: url("img/sky-clouds-cloudy-blur.jpg");
-  background-size: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #filtres ul {
@@ -196,7 +203,7 @@ html {
 }
 
 #filtres a{
-    color: yellow;
+    color:black;
     text-decoration: none;
     display: block;
 }
@@ -227,4 +234,41 @@ html {
 
 #panier img {
     max-height: 20px;
+}
+
+#presentation{
+  width:80%;
+  text-align: left;
+  margin-top:100px;
+}
+
+#presentation section {
+  float:left;
+  max-width:45%;
+  padding:2%;
+}
+
+main > section {
+  width:1000px;
+}
+
+@media screen and (max-width: 1300px) { /*pour les écrans carrés*/
+    main{
+      left:20vw;
+    }
+}
+
+@media screen and (max-width: 480px) { /*pour les smartphones*/
+    main{
+      left:0;
+    }
+    #filtres{
+      color:#DDD;
+      left:-200px;
+    }
+    #filtres:active{
+      color:#DDD;
+      left:0px;
+    }
+    header
 }
