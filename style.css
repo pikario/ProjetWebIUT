@@ -288,6 +288,14 @@ main > section {
   width:1000px;
 }
 
+main  h2 {
+    font-family: sans-serif;
+    color: lightgray;
+}
+
+table{
+    font-family: sans-serif;
+}
 #bouton {
   border-radius: 50%;
   width:30px;
