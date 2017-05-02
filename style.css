@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 header {
     position: fixed;
     margin: 0px;
@@ -26,7 +30,7 @@ aside {
     position: fixed;
     left: 0px;
     top : 155px;
-    padding-top: 10px;uis
+    padding-top: 10px;
     margin-right: 10px;
     height: 100%;
     max-width: 300px;
@@ -52,7 +56,7 @@ footer{
 }
 
 #bandeau > h1 {
-    font-family: sans-serif;
+    
     color: whitesmoke;
     padding-top: 10px ;
     margin: 20px 16px 8px 8px;
@@ -127,7 +131,7 @@ header li {
 }
 
 header li a {
-    font-family: sans-serif;
+    
     font-weight: bold;
     display: block;
     color: white;
@@ -156,7 +160,7 @@ footer li {
 }
 
 footer li a {
-    font-family: sans-serif;
+    
     font-weight: bold;
     display: block;
     color: white;
@@ -187,17 +191,16 @@ article figure{
     margin: 0;
 }
 article figcaption {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
     height: 100px;
 }
 
 .prix {
     color : red;
-    font-family: sans-serif;
+    
     font-weight: bold;
-}
-
-article {
-    font-family: sans-serif;
 }
 
 article h4 {
@@ -227,7 +230,6 @@ article input:hover {
 #filtres{
     color:whitesmoke;
     padding: 2px;
-    font-family: sans-serif;
     font-weight: bold;
 }
 
@@ -259,7 +261,6 @@ article input:hover {
 }
 
 #panier > a {
-    font-family: sans-serif;
     font-weight: bold;
     display: block;
     color: white;
@@ -289,12 +290,25 @@ main > section {
 }
 
 main  h2 {
-    font-family: sans-serif;
     color: lightgray;
 }
 
-table{
-    font-family: sans-serif;
+table td {
+    padding: 5px;
+}
+
+table img{
+    max-height: 200px;
+    width: 200px;
+}
+
+thead > tr > td{
+    text-align: center;
+    font-size: 20px;
+    color: #DEAD50;
+    text-decoration: underline;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 #bouton {
   border-radius: 50%;
