@@ -252,10 +252,15 @@ main > section {
   width:1000px;
 }
 
-@media screen and (max-width: 1300px) { /*pour les écrans carrés*/
-    main{
-      left:20vw;
-    }
+#bouton {
+  border-radius: 50%;
+  width:30px;
+  background: #DEAD50;
+  position:fixed;
+  bottom:10px;
+  right: 10px;
+  text-align: center;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 480px) { /*pour les smartphones*/
@@ -263,12 +268,22 @@ main > section {
       left:0;
     }
     #filtres{
-      color:#DDD;
-      left:-200px;
+      left:-250px;
     }
-    #filtres:active{
-      color:#DDD;
+    #filtres:target{
       left:0px;
     }
-    header
+    #bouton{
+      visibility: visible;
+    }
+    #bandeau>:not(nav){
+      visibility: hidden;
+      height: 0px;
+      width:0px;
+    }
+    nav{
+      position: fixed;
+      height: 10px;
+      top:0px;
+    }
 }
