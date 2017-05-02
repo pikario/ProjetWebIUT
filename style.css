@@ -228,7 +228,7 @@ article input:hover {
 }
 
 #filtres{
-    color:darkgrey;
+    color:#555;
     padding: 2px;
     font-weight: bold;
 }
@@ -290,7 +290,7 @@ main > section {
 }
 
 main  h2 {
-    color: lightgray;
+    color: #EEE;
 }
 
 table td {
