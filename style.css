@@ -57,7 +57,7 @@ footer{
 }
 
 #bandeau > h1 {
-    
+
     color: whitesmoke;
     padding-top: 10px ;
     margin: 20px 16px 8px 8px;
@@ -132,7 +132,7 @@ header li {
 }
 
 header li a {
-    
+
     font-weight: bold;
     display: block;
     color: white;
@@ -161,7 +161,7 @@ footer li {
 }
 
 footer li a {
-    
+
     font-weight: bold;
     display: block;
     color: white;
@@ -200,7 +200,7 @@ article figcaption {
 
 .prix {
     color : red;
-    
+
     font-weight: bold;
 }
 
@@ -284,6 +284,10 @@ article input:hover {
   float:left;
   max-width:45%;
   padding:2%;
+}
+
+#presentation h3 , #presentation h4 {
+  margin:0px
 }
 
 main > section {
