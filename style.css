@@ -26,7 +26,7 @@ aside {
     position: fixed;
     left: 0px;
     top : 155px;
-    padding-top: 10px;
+    padding-top: 10px;uis
     margin-right: 10px;
     height: 100%;
     max-width: 300px;
@@ -209,7 +209,7 @@ html {
 
 #panier{
     position:absolute;
-    left: 80%;
+    left: 85%;
     background-color: #DEAD50;
     border-radius: 0% 0% 35% 35%;
     box-shadow: 0 0 8px rgba(0,0,0,0.12),0 8px 8px rgba(0,0,0,0.24);
@@ -221,7 +221,7 @@ html {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px;
     text-decoration: none;
 }
 
